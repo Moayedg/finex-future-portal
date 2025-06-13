@@ -20,9 +20,9 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/61e457d7-9010-415b-8332-0ed140bf296f.png" 
+              src="/lovable-uploads/b6ca669f-4fe4-433a-9792-92e0326f5140.png" 
               alt="Finex Logo" 
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </div>
 

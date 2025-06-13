@@ -8,9 +8,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/61e457d7-9010-415b-8332-0ed140bf296f.png" 
+                src="/lovable-uploads/b6ca669f-4fe4-433a-9792-92e0326f5140.png" 
                 alt="Finex Logo" 
-                className="h-8 w-auto mr-3"
+                className="h-10 w-auto mr-3"
               />
             </div>
             <p className="text-gray-400 font-lexend mb-4">
@@ -54,10 +54,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-lexend font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400 font-lexend">
-              <p>📧 hello@finex.com</p>
-              <p>📞 +1 (555) 123-4567</p>
-              <p>🏢 123 Financial District</p>
-              <p>   New York, NY 10001</p>
+              <p>📧 info@finex.com</p>
+              <p>📞 +218 922555900</p>
+              <p>🏢 Fuwehat, Alrhaba</p>
+              <p>   Benghazi, Libya</p>
             </div>
           </div>
         </div>

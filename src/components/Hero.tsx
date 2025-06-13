@@ -19,9 +19,9 @@ const Hero = () => {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="/lovable-uploads/61e457d7-9010-415b-8332-0ed140bf296f.png" 
+              src="/lovable-uploads/b6ca669f-4fe4-433a-9792-92e0326f5140.png" 
               alt="Finex Logo" 
-              className="h-20 w-auto mx-auto"
+              className="h-24 w-auto mx-auto"
             />
           </div>
 
@@ -51,7 +51,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={scrollToContact}
-              className="border-white text-white hover:bg-white hover:text-primary font-lexend font-semibold px-8 py-3 text-lg transition-all duration-300"
+              className="border-white text-white hover:bg-white hover:text-primary font-lexend font-semibold px-8 py-3 text-lg transition-all duration-300 bg-transparent"
             >
               Book a Demo
             </Button>

@@ -81,10 +81,10 @@ const Contact = () => {
                 Contact Information
               </h4>
               <div className="space-y-3">
-                <p className="text-gray-600 font-lexend">📧 hello@finex.com</p>
-                <p className="text-gray-600 font-lexend">📞 +1 (555) 123-4567</p>
-                <p className="text-gray-600 font-lexend">🏢 123 Financial District, Suite 100</p>
-                <p className="text-gray-600 font-lexend">   New York, NY 10001</p>
+                <p className="text-gray-600 font-lexend">📧 info@finex.com</p>
+                <p className="text-gray-600 font-lexend">📞 +218 922555900</p>
+                <p className="text-gray-600 font-lexend">🏢 Fuwehat, Alrhaba</p>
+                <p className="text-gray-600 font-lexend">   Benghazi, Libya</p>
               </div>
             </div>
           </div>

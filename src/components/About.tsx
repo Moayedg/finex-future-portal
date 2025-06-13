@@ -13,81 +13,86 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
-              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-4">
+            <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
+              <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
                 Banking Technology
               </h3>
-              <p className="text-gray-700 font-lexend">
+              <p className="text-gray-700 font-lexend text-sm">
                 We develop cutting-edge banking technology solutions that streamline 
-                financial operations and enhance customer experiences through innovative 
-                digital platforms.
+                financial operations and enhance customer experiences.
               </p>
             </div>
 
-            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
-              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+            <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
+              <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
                 Secure Fintech Tools
               </h3>
-              <p className="text-gray-700 font-lexend">
+              <p className="text-gray-700 font-lexend text-sm">
                 Our comprehensive suite of fintech tools provides robust security 
-                measures, ensuring that all financial transactions and data remain 
-                protected at all times.
+                measures for all financial transactions and data.
               </p>
             </div>
 
-            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
-              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+            <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
+              <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
                 Mobile & Web Payment Solutions
               </h3>
-              <p className="text-gray-700 font-lexend">
+              <p className="text-gray-700 font-lexend text-sm">
                 We create seamless payment solutions across mobile and web platforms, 
-                enabling businesses to process transactions efficiently and securely.
+                enabling efficient and secure transaction processing.
               </p>
             </div>
 
-            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
-              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+            <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
+              <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
                 AI Automation
               </h3>
-              <p className="text-gray-700 font-lexend">
+              <p className="text-gray-700 font-lexend text-sm">
                 We leverage artificial intelligence to automate complex financial processes, 
-                improving efficiency and reducing operational costs while maintaining 
-                the highest standards of accuracy and reliability.
+                improving efficiency and reducing operational costs.
               </p>
             </div>
 
-            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
-              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+            <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
+              <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
                 Product Support & Marketing
               </h3>
-              <p className="text-gray-700 font-lexend">
-                We provide comprehensive support for our products and services, along with 
-                strategic marketing solutions to help our clients reach their target audiences 
-                and achieve their business objectives.
+              <p className="text-gray-700 font-lexend text-sm">
+                We provide comprehensive support for our products and strategic marketing 
+                solutions to help clients reach their business objectives.
               </p>
             </div>
 
-            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
-              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+            <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
+              <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
+                Mobile Applications, Websites and ERP Systems
+              </h3>
+              <p className="text-gray-700 font-lexend text-sm">
+                We develop comprehensive mobile applications, responsive websites, and 
+                enterprise resource planning systems tailored to your business needs.
+              </p>
+            </div>
+
+            <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
+              <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
                 IT Infrastructure Solutions
               </h3>
-              <p className="text-gray-700 font-lexend">
+              <p className="text-gray-700 font-lexend text-sm">
                 We deliver complete IT infrastructure solutions for banking and other sectors, 
-                providing scalable, secure, and reliable technology foundations that support 
-                business growth and operational excellence.
+                providing scalable, secure, and reliable technology foundations.
               </p>
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative flex justify-center">
             <img 
-              src="/placeholder.svg?height=600&width=500" 
-              alt="Financial Technology Dashboard"
-              className="w-full h-auto rounded-2xl shadow-2xl"
+              src="/lovable-uploads/79aea378-546a-47da-9596-f9b76847e293.png" 
+              alt="Finex Mobile Application"
+              className="w-auto h-96 rounded-2xl shadow-2xl"
             />
-            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
           </div>
         </div>
       </div>
