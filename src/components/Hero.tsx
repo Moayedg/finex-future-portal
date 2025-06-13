@@ -19,9 +19,9 @@ const Hero = () => {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="/placeholder.svg" 
+              src="/lovable-uploads/61e457d7-9010-415b-8332-0ed140bf296f.png" 
               alt="Finex Logo" 
-              className="h-20 w-auto mx-auto filter brightness-0 invert"
+              className="h-20 w-auto mx-auto"
             />
           </div>
 

@@ -8,11 +8,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/placeholder.svg" 
+                src="/lovable-uploads/61e457d7-9010-415b-8332-0ed140bf296f.png" 
                 alt="Finex Logo" 
-                className="h-8 w-auto filter brightness-0 invert mr-3"
+                className="h-8 w-auto mr-3"
               />
-              <span className="text-xl font-lexend font-bold">Finex</span>
             </div>
             <p className="text-gray-400 font-lexend mb-4">
               Smart financial solutions for a secure future. Delivering innovative 
