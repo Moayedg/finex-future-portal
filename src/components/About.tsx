@@ -46,6 +46,39 @@ const About = () => {
                 enabling businesses to process transactions efficiently and securely.
               </p>
             </div>
+
+            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
+              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+                AI Automation
+              </h3>
+              <p className="text-gray-700 font-lexend">
+                We leverage artificial intelligence to automate complex financial processes, 
+                improving efficiency and reducing operational costs while maintaining 
+                the highest standards of accuracy and reliability.
+              </p>
+            </div>
+
+            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
+              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+                Product Support & Marketing
+              </h3>
+              <p className="text-gray-700 font-lexend">
+                We provide comprehensive support for our products and services, along with 
+                strategic marketing solutions to help our clients reach their target audiences 
+                and achieve their business objectives.
+              </p>
+            </div>
+
+            <div className="bg-gradient-secondary p-8 rounded-2xl animate-scale-in">
+              <h3 className="text-2xl font-lexend font-semibold text-primary mb-4">
+                IT Infrastructure Solutions
+              </h3>
+              <p className="text-gray-700 font-lexend">
+                We deliver complete IT infrastructure solutions for banking and other sectors, 
+                providing scalable, secure, and reliable technology foundations that support 
+                business growth and operational excellence.
+              </p>
+            </div>
           </div>
 
           <div className="relative">
