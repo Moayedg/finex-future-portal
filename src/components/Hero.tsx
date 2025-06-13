@@ -21,7 +21,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/b6ca669f-4fe4-433a-9792-92e0326f5140.png" 
               alt="Finex Logo" 
-              className="h-24 w-auto mx-auto"
+              className="h-36 w-auto mx-auto"
             />
           </div>
 

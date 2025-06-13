@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -81,10 +82,21 @@ const Contact = () => {
                 Contact Information
               </h4>
               <div className="space-y-3">
-                <p className="text-gray-600 font-lexend">📧 info@finex.com</p>
-                <p className="text-gray-600 font-lexend">📞 +218 922555900</p>
-                <p className="text-gray-600 font-lexend">🏢 Fuwehat, Alrhaba</p>
-                <p className="text-gray-600 font-lexend">   Benghazi, Libya</p>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-primary" />
+                  <p className="text-gray-600 font-lexend">info@finex.com</p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-primary" />
+                  <p className="text-gray-600 font-lexend">+218 922555900</p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  <div>
+                    <p className="text-gray-600 font-lexend">Fuwehat, Alrhaba</p>
+                    <p className="text-gray-600 font-lexend">Benghazi, Libya</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

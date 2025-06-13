@@ -1,4 +1,6 @@
 
+import { Mail, Phone, MapPin } from 'lucide-react';
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -53,11 +55,22 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-lexend font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-2 text-gray-400 font-lexend">
-              <p>📧 info@finex.com</p>
-              <p>📞 +218 922555900</p>
-              <p>🏢 Fuwehat, Alrhaba</p>
-              <p>   Benghazi, Libya</p>
+            <div className="space-y-3 text-gray-400 font-lexend">
+              <div className="flex items-center space-x-3">
+                <Mail className="w-4 h-4" />
+                <p>info@finex.com</p>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-4 h-4" />
+                <p>+218 922555900</p>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-4 h-4" />
+                <div>
+                  <p>Fuwehat, Alrhaba</p>
+                  <p>Benghazi, Libya</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +78,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 font-lexend">
-            © 2024 Finex. All rights reserved. | Privacy Policy | Terms of Service
+            © 2025 Finex. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </div>
