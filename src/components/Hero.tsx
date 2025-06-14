@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4 text-center leading-relaxed">
+          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4 text-left leading-relaxed">
             <p>Finex specializes in smart financial solutions</p>
             <p>mobile applications and powerful payment gateways</p>
             <p>designed for a secure future. As a forward-thinking</p>
