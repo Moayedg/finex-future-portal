@@ -68,7 +68,7 @@ const Features = () => {
             </div>
             <div className="animate-fade-in">
               <div className="text-4xl md:text-5xl font-lexend font-bold mb-2">1M+</div>
-              <div className="text-primary-200 font-lexend">Transactions Processed</div>
+              <div className="text-primary-200 font-lexend">Projected Transactions Processed</div>
             </div>
             <div className="animate-fade-in">
               <div className="text-4xl md:text-5xl font-lexend font-bold mb-2">24/7</div>

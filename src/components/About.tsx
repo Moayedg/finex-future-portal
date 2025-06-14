@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
@@ -92,7 +92,7 @@ const About = () => {
             <img 
               src="/lovable-uploads/77de5583-ee7c-4cad-847c-11232e86405c.png" 
               alt="Finex Mobile and Web Application"
-              className="w-auto h-96 rounded-2xl shadow-2xl"
+              className="w-full h-full object-cover rounded-2xl shadow-2xl"
             />
             <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
           </div>
