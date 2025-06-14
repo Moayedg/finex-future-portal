@@ -86,15 +86,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          <div className="relative flex justify-center items-center overflow-hidden">
-            <img 
-              src="/lovable-uploads/a6686830-36c6-4b13-87ad-23f0d7d70f90.png" 
-              alt="Finex Smart Financial Solutions - Mobile and Desktop"
-              className="w-full h-auto object-cover rounded-2xl shadow-2xl"
-            />
-            <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
-          </div>
         </div>
       </div>
     </section>
