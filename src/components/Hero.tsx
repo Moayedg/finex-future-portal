@@ -33,16 +33,9 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4 leading-relaxed flex flex-col items-center">
-            <div className="text-left">
-              <p>Finex specializes in smart financial solutions</p>
-              <p>mobile applications and powerful payment gateways</p>
-              <p>designed for a secure future. As a forward-thinking</p>
-              <p>fintech company, we develop secure, innovative,</p>
-              <p>and intuitive products that simplify how individuals</p>
-              <p>and businesses manage, move, and grow their money.</p>
-            </div>
-          </div>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4 text-center">
+            Finex specializes in smart financial solutions mobile applications and powerful payment gateways designed for a secure future. As a forward-thinking fintech company, we develop secure, innovative, and intuitive products that simplify how individuals and businesses manage, move, and grow their money.
+          </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
