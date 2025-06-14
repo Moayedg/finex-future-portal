@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -16,33 +17,33 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
           {/* Logo */}
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8">
             <img 
               src="/lovable-uploads/b6ca669f-4fe4-433a-9792-92e0326f5140.png" 
               alt="Finex Logo" 
-              className="h-64 w-auto mx-auto transform scale-[0.88]"
+              className="h-32 sm:h-48 md:h-56 lg:h-64 w-auto mx-auto transform scale-[0.88]"
             />
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-lexend font-bold text-white mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-lexend font-bold text-white mb-4 sm:mb-6 leading-tight px-2">
             Smart financial solutions
             <br />
             <span className="text-blue-100">for a secure future</span>
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl text-blue-50 mb-8 max-w-3xl mx-auto font-lexend">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4">
             Finex delivers secure, innovative, and user-friendly fintech products 
             that transform how businesses and individuals manage their finances.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
             <Button 
               size="lg"
               onClick={scrollToContact}
-              className="bg-white text-blue-800 hover:bg-gray-100 font-lexend font-semibold px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-blue-800 hover:bg-gray-100 font-lexend font-semibold px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
             >
               Get Started
             </Button>
@@ -50,7 +51,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={scrollToContact}
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-lexend font-semibold px-8 py-3 text-lg transition-all duration-300 bg-transparent"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-lexend font-semibold px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg transition-all duration-300 bg-transparent w-full sm:w-auto"
             >
               Book a Demo
             </Button>
