@@ -87,11 +87,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative flex justify-center lg:pl-12 lg:ml-4 h-full">
+          <div className="relative flex justify-center lg:pl-8 lg:ml-8 h-full">
             <img 
               src="/lovable-uploads/890fe076-24de-4a88-9670-51bbc01e4cb0.png" 
               alt="Finex Mobile and Web Application"
-              className="w-full h-full object-cover rounded-2xl shadow-2xl"
+              className="w-[120%] h-full object-cover rounded-2xl shadow-2xl"
             />
             <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
           </div>
