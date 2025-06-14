@@ -46,7 +46,7 @@ const SocialMedia = () => {
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${platform.bgColor} p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-scale-in group`}
+              className={`${platform.bgColor} p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-scale-in group w-48 h-48 flex flex-col items-center justify-center`}
             >
               <div className="text-white flex flex-col items-center space-y-4">
                 <platform.icon className="w-12 h-12 group-hover:scale-110 transition-transform duration-300" />

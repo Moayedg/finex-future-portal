@@ -13,8 +13,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-4 lg:pr-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-gradient-secondary p-6 rounded-2xl animate-scale-in">
                 <h3 className="text-lg font-lexend font-semibold text-primary mb-3">
@@ -88,11 +88,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center lg:pl-8">
             <img 
-              src="/lovable-uploads/77de5583-ee7c-4cad-847c-11232e86405c.png" 
+              src="/lovable-uploads/61e457d7-9010-415b-8332-0ed140bf296f.png" 
               alt="Finex Mobile and Web Application"
-              className="w-full h-auto object-cover rounded-2xl shadow-2xl scale-[1.7]"
+              className="w-full h-auto object-cover rounded-2xl shadow-2xl scale-[1.4] lg:scale-[1.5]"
             />
             <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
           </div>
