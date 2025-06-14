@@ -94,7 +94,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/438352e8-a562-4e1a-a284-5c48e041b9fa.png" 
                 alt="Finex mobile and desktop application preview" 
-                className="w-full h-auto object-contain animate-scale-in"
+                className="w-full h-auto object-contain animate-scale-in rounded-2xl"
               />
             </div>
           </div>
