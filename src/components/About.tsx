@@ -91,8 +91,8 @@ const About = () => {
           <div className="relative flex justify-center items-center overflow-hidden">
             <div className="w-full max-w-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=1200&q=80" 
-                alt="Technology Circuit Board - Fintech Innovation"
+                src="/lovable-uploads/a6686830-36c6-4b13-87ad-23f0d7d70f90.png" 
+                alt="Finex Smart Financial Solutions - Mobile and Desktop"
                 className="w-full h-auto object-cover rounded-2xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
