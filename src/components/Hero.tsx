@@ -33,13 +33,15 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4 text-left leading-relaxed">
-            <p>Finex specializes in smart financial solutions</p>
-            <p>mobile applications and powerful payment gateways</p>
-            <p>designed for a secure future. As a forward-thinking</p>
-            <p>fintech company, we develop secure, innovative,</p>
-            <p>and intuitive products that simplify how individuals</p>
-            <p>and businesses manage, move, and grow their money.</p>
+          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4 leading-relaxed flex flex-col items-center">
+            <div className="text-left">
+              <p>Finex specializes in smart financial solutions</p>
+              <p>mobile applications and powerful payment gateways</p>
+              <p>designed for a secure future. As a forward-thinking</p>
+              <p>fintech company, we develop secure, innovative,</p>
+              <p>and intuitive products that simplify how individuals</p>
+              <p>and businesses manage, move, and grow their money.</p>
+            </div>
           </div>
 
           {/* CTA Buttons */}
