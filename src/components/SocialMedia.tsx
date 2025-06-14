@@ -12,7 +12,7 @@ const SocialMedia = () => {
     {
       name: 'X',
       icon: () => (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
         </svg>
       ),
@@ -28,7 +28,7 @@ const SocialMedia = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="social-media" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-lexend font-bold text-gray-900 mb-6">

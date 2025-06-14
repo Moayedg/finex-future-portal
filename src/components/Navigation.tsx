@@ -41,6 +41,12 @@ const Navigation = () => {
               About Us
             </button>
             <button 
+              onClick={() => scrollToSection('social-media')}
+              className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors"
+            >
+              Connect with us
+            </button>
+            <button 
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors"
             >
@@ -78,6 +84,12 @@ const Navigation = () => {
                 className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors text-left"
               >
                 About Us
+              </button>
+              <button 
+                onClick={() => scrollToSection('social-media')}
+                className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors text-left"
+              >
+                Connect with us
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
