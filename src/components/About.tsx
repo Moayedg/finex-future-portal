@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -90,8 +91,8 @@ const About = () => {
 
           <div className="relative flex justify-center lg:pl-8 lg:ml-8 h-full overflow-hidden">
             <img 
-              src="/lovable-uploads/890fe076-24de-4a88-9670-51bbc01e4cb0.png" 
-              alt="Finex Mobile and Web Application"
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=1200&q=80" 
+              alt="Technology Circuit Board - Fintech Innovation"
               className="w-[375%] h-full object-cover rounded-2xl shadow-2xl"
             />
             <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
@@ -103,3 +104,4 @@ const About = () => {
 };
 
 export default About;
+
