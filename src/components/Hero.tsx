@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -34,8 +33,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4">
-            Finex delivers secure, innovative, and user-friendly fintech products 
-            that transform how businesses and individuals manage their finances.
+            At Finex, we specialize in smart financial solutions designed for a secure future. As a forward-thinking fintech company, we develop secure, innovative, and intuitive products that simplify how individuals and businesses manage, move, and grow their money. From seamless mobile applications to powerful payment gateways, Finex empowers users with tools that redefine financial freedom—securely and efficiently.
           </p>
 
           {/* CTA Buttons */}
