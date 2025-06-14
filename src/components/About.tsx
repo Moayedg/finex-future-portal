@@ -1,3 +1,4 @@
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -84,6 +85,16 @@ const About = () => {
                   providing scalable, secure, and reliable technology foundations.
                 </p>
               </div>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div className="w-full max-w-lg">
+              <img 
+                src="/lovable-uploads/fb1b7222-d79f-4ba7-9e04-06b0d747ca9f.png" 
+                alt="Finex mobile and desktop application preview" 
+                className="w-full h-auto object-contain animate-scale-in"
+              />
             </div>
           </div>
         </div>
