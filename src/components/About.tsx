@@ -92,7 +92,7 @@ const About = () => {
             <img 
               src="/lovable-uploads/890fe076-24de-4a88-9670-51bbc01e4cb0.png" 
               alt="Finex Mobile and Web Application"
-              className="w-[150%] h-full object-cover rounded-2xl shadow-2xl"
+              className="w-[200%] h-full object-cover rounded-2xl shadow-2xl"
             />
             <div className="absolute inset-0 bg-gradient-primary opacity-5 rounded-2xl"></div>
           </div>
