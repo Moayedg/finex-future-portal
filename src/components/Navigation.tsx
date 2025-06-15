@@ -1,9 +1,12 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -32,26 +35,27 @@ const Navigation = () => {
               onClick={() => scrollToSection('home')}
               className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors"
             >
-              Home
+              {t('home')}
             </button>
             <button 
               onClick={() => scrollToSection('about')}
               className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors"
             >
-              About Us
+              {t('aboutUs')}
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors"
             >
-              Contact Us
+              {t('contactUs')}
             </button>
             <button 
               onClick={() => scrollToSection('social-media')}
               className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors"
             >
-              Connect with us
+              {t('connectWithUs')}
             </button>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button */}
@@ -77,26 +81,27 @@ const Navigation = () => {
                 onClick={() => scrollToSection('home')}
                 className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors text-left"
               >
-                Home
+                {t('home')}
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors text-left"
               >
-                About Us
+                {t('aboutUs')}
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors text-left"
               >
-                Contact Us
+                {t('contactUs')}
               </button>
               <button 
                 onClick={() => scrollToSection('social-media')}
                 className="text-gray-700 hover:text-primary font-lexend font-medium transition-colors text-left"
               >
-                Connect with us
+                {t('connectWithUs')}
               </button>
+              <LanguageSwitcher />
             </div>
           </div>
         )}

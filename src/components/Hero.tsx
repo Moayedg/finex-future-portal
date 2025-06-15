@@ -1,7 +1,10 @@
 
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -27,14 +30,14 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-lexend font-bold text-white mb-4 sm:mb-6 leading-tight px-2">
-            Smart financial solutions
+            {t('heroTitle1')}
             <br />
-            <span className="text-blue-100">for a secure future</span>
+            <span className="text-blue-100">{t('heroTitle2')}</span>
           </h1>
 
           {/* Description */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-50 mb-6 sm:mb-8 max-w-3xl mx-auto font-lexend px-4 text-center">
-            Finex specializes in smart financial solutions mobile applications and powerful payment gateways designed for a secure future. As a forward-thinking fintech company, we develop secure, innovative, and intuitive products that simplify how individuals and businesses manage, move, and grow their money.
+            {t('heroDescription')}
           </p>
 
           {/* CTA Buttons */}
@@ -44,7 +47,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="bg-white text-blue-800 hover:bg-gray-100 font-lexend font-semibold px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
             >
-              Get Started
+              {t('getStarted')}
             </Button>
             <Button 
               size="lg"
@@ -52,7 +55,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="border-2 border-white text-white hover:bg-white hover:text-blue-800 font-lexend font-semibold px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg transition-all duration-300 bg-transparent w-full sm:w-auto"
             >
-              Book a Demo
+              {t('bookDemo')}
             </Button>
           </div>
         </div>

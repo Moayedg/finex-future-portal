@@ -1,7 +1,11 @@
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,21 +20,20 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 font-lexend mb-4">
-              Smart financial solutions for a secure future. Delivering innovative 
-              fintech products that transform how businesses manage their finances.
+              {t('footerDescription')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-lexend font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-lexend font-semibold mb-4">{t('quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <button 
                   onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-400 hover:text-white font-lexend transition-colors"
                 >
-                  Home
+                  {t('home')}
                 </button>
               </li>
               <li>
@@ -38,7 +41,7 @@ const Footer = () => {
                   onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-400 hover:text-white font-lexend transition-colors"
                 >
-                  About Us
+                  {t('aboutUs')}
                 </button>
               </li>
               <li>
@@ -46,15 +49,50 @@ const Footer = () => {
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-400 hover:text-white font-lexend transition-colors"
                 >
-                  Contact Us
+                  {t('contactUs')}
                 </button>
+              </li>
+              <li>
+                <a 
+                  href="https://facebook.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white font-lexend transition-colors flex items-center"
+                >
+                  <Facebook className="w-4 h-4 mr-2" />
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://x.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white font-lexend transition-colors flex items-center"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  X
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://instagram.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white font-lexend transition-colors flex items-center"
+                >
+                  <Instagram className="w-4 h-4 mr-2" />
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-lexend font-semibold mb-4">Contact Info</h4>
+            <h4 className="text-lg font-lexend font-semibold mb-4">{t('contactInfo')}</h4>
             <div className="space-y-3 text-gray-400 font-lexend">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4" />
@@ -76,10 +114,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-400 font-lexend">
-            © 2025 Finex. All rights reserved. | Privacy Policy | Terms of Service
+        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center">
+          <p className="text-gray-400 font-lexend mb-4 sm:mb-0">
+            {t('copyright')}
           </p>
+          <LanguageSwitcher />
         </div>
       </div>
     </footer>
