@@ -8,7 +8,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Contact = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -89,13 +89,22 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
-                  <p className="text-gray-600">+218 922555900</p>
+                  <p className={`text-gray-600 ${language === 'ar' ? 'transform scale-x-[-1]' : ''}`}>+218 922555900</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-gray-600">Fuwehat, Alrhaba</p>
-                    <p className="text-gray-600">Benghazi, Libya</p>
+                    {language === 'ar' ? (
+                      <>
+                        <p className="text-gray-600">الفويهات، الرحبة</p>
+                        <p className="text-gray-600">بنغازي، ليبيا</p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="text-gray-600">Fuwehat, Alrhaba</p>
+                        <p className="text-gray-600">Benghazi, Libya</p>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
