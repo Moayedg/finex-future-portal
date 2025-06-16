@@ -76,7 +76,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />
-                <p className={language === 'ar' ? 'transform scale-x-[-1]' : ''}>+218 922555900</p>
+                <p className={language === 'ar' ? 'transform rotate-180' : ''}>+218 922555900</p>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4" />

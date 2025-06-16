@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
-                  <p className={`text-gray-600 ${language === 'ar' ? 'transform scale-x-[-1]' : ''}`}>+218 922555900</p>
+                  <p className={`text-gray-600 ${language === 'ar' ? 'transform rotate-180' : ''}`}>+218 922555900</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
