@@ -4,7 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -100,13 +100,22 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />
-                <p>+218 922555900</p>
+                <p className={language === 'ar' ? 'transform scale-x-[-1]' : ''}>+218 922555900</p>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4" />
                 <div>
-                  <p>Fuwehat, Alrhaba</p>
-                  <p>Benghazi, Libya</p>
+                  {language === 'ar' ? (
+                    <>
+                      <p>الفويهات، الرحبة</p>
+                      <p>بنغازي، ليبيا</p>
+                    </>
+                  ) : (
+                    <>
+                      <p>Fuwehat, Alrhaba</p>
+                      <p>Benghazi, Libya</p>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

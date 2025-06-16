@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'en' | 'ar';
@@ -181,7 +180,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
-      <div className={`${language === 'ar' ? 'rtl font-cairo' : 'ltr font-lexend'}`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
+      <div className={`${language === 'ar' ? 'rtl font-arabic' : 'ltr font-lexend'}`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
         {children}
       </div>
     </LanguageContext.Provider>
