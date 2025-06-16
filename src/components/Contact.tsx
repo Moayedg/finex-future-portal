@@ -5,8 +5,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,13 +20,13 @@ const Contact = () => {
     
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      toast.error('Please fill in all fields');
+      toast.error(t('fillAllFields'));
       return;
     }
 
     // Simulate form submission
     console.log('Form submitted:', formData);
-    toast.success('Thank you for your message! We\'ll get back to you soon.');
+    toast.success(t('thankYouMessage'));
     
     // Reset form
     setFormData({ name: '', email: '', message: '' });
@@ -41,12 +43,11 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-lexend font-bold text-gray-900 mb-6">
-            Get in <span className="text-primary">Touch</span>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            {t('getInTouch')} <span className="text-primary"></span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-lexend">
-            Ready to transform your financial operations? Contact us today to learn 
-            how Finex can help your business thrive.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {t('contactDescription')}
           </p>
         </div>
 
@@ -54,47 +55,47 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-gradient-secondary p-8 rounded-2xl">
-              <h3 className="text-2xl font-lexend font-semibold text-primary mb-6">
-                Why Choose Finex?
+              <h3 className="text-2xl font-semibold text-primary mb-6">
+                {t('whyChooseFinex')}
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-gray-700 font-lexend">Enterprise-grade security and compliance</span>
+                  <span className="text-gray-700">{t('enterpriseSecurity')}</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-gray-700 font-lexend">Scalable solutions for businesses of all sizes</span>
+                  <span className="text-gray-700">{t('scalableSolutions')}</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-gray-700 font-lexend">24/7 expert support and consultation</span>
+                  <span className="text-gray-700">{t('expertSupport')}</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-gray-700 font-lexend">Fast integration and deployment</span>
+                  <span className="text-gray-700">{t('fastIntegration')}</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl">
-              <h4 className="text-xl font-lexend font-semibold text-gray-900 mb-4">
-                Contact Information
+              <h4 className="text-xl font-semibold text-gray-900 mb-4">
+                {t('contactInformation')}
               </h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <p className="text-gray-600 font-lexend">info@finex.com</p>
+                  <p className="text-gray-600">info@finex.com</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
-                  <p className="text-gray-600 font-lexend">+218 922555900</p>
+                  <p className="text-gray-600">+218 922555900</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-gray-600 font-lexend">Fuwehat, Alrhaba</p>
-                    <p className="text-gray-600 font-lexend">Benghazi, Libya</p>
+                    <p className="text-gray-600">Fuwehat, Alrhaba</p>
+                    <p className="text-gray-600">Benghazi, Libya</p>
                   </div>
                 </div>
               </div>
@@ -105,8 +106,8 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
             <div className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-lexend font-medium text-gray-700 mb-2">
-                  Full Name *
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  {t('fullName')} *
                 </label>
                 <Input
                   id="name"
@@ -114,15 +115,14 @@ const Contact = () => {
                   type="text"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Enter your full name"
-                  className="font-lexend"
+                  placeholder={t('enterFullName')}
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-lexend font-medium text-gray-700 mb-2">
-                  Email Address *
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  {t('emailAddress')} *
                 </label>
                 <Input
                   id="email"
@@ -130,33 +130,31 @@ const Contact = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Enter your email address"
-                  className="font-lexend"
+                  placeholder={t('enterEmail')}
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-lexend font-medium text-gray-700 mb-2">
-                  Message *
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  {t('message')} *
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your project or ask any questions..."
+                  placeholder={t('tellUsProject')}
                   rows={6}
-                  className="font-lexend"
                   required
                 />
               </div>
 
               <Button 
                 type="submit"
-                className="w-full bg-gradient-primary hover:opacity-90 text-white font-lexend font-semibold py-3 transition-all duration-300"
+                className="w-full bg-gradient-primary hover:opacity-90 text-white font-semibold py-3 transition-all duration-300"
               >
-                Send Message
+                {t('sendMessage')}
               </Button>
             </div>
           </form>
