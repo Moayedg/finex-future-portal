@@ -29,30 +29,6 @@ const Footer = () => {
             <h4 className="text-lg font-lexend font-semibold mb-4">{t('quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-gray-400 hover:text-white font-lexend transition-colors"
-                >
-                  {t('home')}
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-gray-400 hover:text-white font-lexend transition-colors"
-                >
-                  {t('aboutUs')}
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-gray-400 hover:text-white font-lexend transition-colors"
-                >
-                  {t('contactUs')}
-                </button>
-              </li>
-              <li>
                 <a 
                   href="https://facebook.com" 
                   target="_blank" 
